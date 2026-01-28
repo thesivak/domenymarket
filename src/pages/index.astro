@@ -12,7 +12,7 @@ const t = useTranslations(lang);
   <nav class="fixed top-0 left-0 right-0 z-50 bg-[var(--color-paper)]/90 backdrop-blur-md border-b border-[var(--color-ink)]/5">
     <div class="max-w-7xl mx-auto px-6 lg:px-12">
       <div class="flex justify-between items-center h-20">
-        <a href="/" class="group flex items-center gap-3">
+        <a href={`${import.meta.env.BASE_URL}`} class="group flex items-center gap-3">
           <div class="w-10 h-10 rounded-full bg-[var(--color-ink)] flex items-center justify-center">
             <span class="text-[var(--color-gold)] font-display font-bold text-lg">D</span>
           </div>
@@ -23,8 +23,8 @@ const t = useTranslations(lang);
         <div class="flex items-center gap-4">
           <!-- Language Switcher -->
           <div class="flex items-center gap-1 text-sm">
-            <a href="/" class="px-2 py-1 rounded font-medium bg-[var(--color-ink)] text-white">CZ</a>
-            <a href="/en" class="px-2 py-1 rounded text-[var(--color-muted)] hover:text-[var(--color-ink)] transition-colors">EN</a>
+            <a href={`${import.meta.env.BASE_URL}`} class="px-2 py-1 rounded font-medium bg-[var(--color-ink)] text-white">CZ</a>
+            <a href={`${import.meta.env.BASE_URL}en/`} class="px-2 py-1 rounded text-[var(--color-muted)] hover:text-[var(--color-ink)] transition-colors">EN</a>
           </div>
           <a 
             href="#contact" 
@@ -324,8 +324,8 @@ const t = useTranslations(lang);
           © 2026 DomenyMarket.cz
         </p>
         <div class="flex items-center gap-1 text-sm">
-          <a href="/" class="px-2 py-1 rounded font-medium bg-[var(--color-ink)] text-white">CZ</a>
-          <a href="/en" class="px-2 py-1 rounded text-[var(--color-muted)] hover:text-[var(--color-ink)] transition-colors">EN</a>
+          <a href={`${import.meta.env.BASE_URL}`} class="px-2 py-1 rounded font-medium bg-[var(--color-ink)] text-white">CZ</a>
+          <a href={`${import.meta.env.BASE_URL}en/`} class="px-2 py-1 rounded text-[var(--color-muted)] hover:text-[var(--color-ink)] transition-colors">EN</a>
         </div>
       </div>
     </div>
