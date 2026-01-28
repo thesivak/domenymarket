@@ -1,30 +1,30 @@
 [
   {
+    "domain": "nwsltr.cz",
+    "category": "SaaS & Tech",
+    "description": "Moderní zkratka pro 'newsletter'. Perfektní pro email marketing platformu, SaaS startup nebo content creator tools. Krátká, zapamatovatelná, okamžitě jasná.",
+    "highlights": ["Brandable", "Tech startup ready", "6 znaků", "Trending niche"],
+    "premium": true
+  },
+  {
     "domain": "idvert.cz",
     "category": "Marketing & Reklama",
-    "description": "Skvělá doména pro reklamní agenturu nebo ad-tech startup. Historie od roku 2017.",
-    "highlights": ["178 zpětných odkazů", "Zavedená doména", "Ad-tech niche"],
+    "description": "Skvělá doména pro reklamní agenturu, ad-tech startup nebo marketingovou platformu. Historie od roku 2017 s existujícími zpětnými odkazy.",
+    "highlights": ["178 zpětných odkazů", "7+ let historie", "Ad-tech niche"],
     "premium": true
   },
   {
     "domain": "rcmshop.cz",
     "category": "E-commerce",
-    "description": "Ideální pro e-shop s RC modely a hobby produkty. Silný keyword.",
-    "highlights": ["176 zpětných odkazů", "E-shop ready", "RC hobby niche"],
-    "premium": true
-  },
-  {
-    "domain": "nwsltr.cz",
-    "category": "SaaS & Tech",
-    "description": "Moderní zkratka pro 'newsletter'. Perfektní pro email marketing platformu.",
-    "highlights": ["Brandable", "Tech startup", "Krátká a zapamatovatelná"],
-    "premium": true
+    "description": "Ideální pro e-shop s RC modely, drony nebo hobby elektronikou. Silný keyword match pro RC komunitu v Česku.",
+    "highlights": ["176 zpětných odkazů", "E-shop ready", "Niche keyword"],
+    "premium": false
   },
   {
     "domain": "artplzen.cz",
     "category": "Umění & Kultura",
-    "description": "Kombinace 'art' + lokace Plzeň. Vhodné pro galerie, umělce nebo kulturní projekty.",
-    "highlights": ["109 zpětných odkazů", "GEO doména", "Kulturní sektor"],
+    "description": "Kombinace 'art' + lokace Plzeň. Vhodné pro galerie, umělecká studia, kulturní projekty nebo kreativní agentury v západních Čechách.",
+    "highlights": ["109 zpětných odkazů", "GEO targeted", "Kulturní sektor"],
     "premium": false
   }
 ]

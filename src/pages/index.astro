@@ -3,173 +3,298 @@ import Layout from '../layouts/Layout.astro';
 import domains from '../data/domains.json';
 ---
 
-<Layout title="DomenyMarket.cz | Prémiové české domény na prodej">
+<Layout title="DomenyMarket.cz | Prémiové české domény">
   <!-- Navigation -->
-  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-200">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex justify-between items-center h-16">
-        <a href="/" class="flex items-center space-x-2">
-          <span class="text-2xl">🌐</span>
-          <span class="font-bold text-xl text-gray-900">DomenyMarket<span class="text-blue-600">.cz</span></span>
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-[var(--color-paper)]/90 backdrop-blur-md border-b border-[var(--color-ink)]/5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex justify-between items-center h-20">
+        <a href="/" class="group flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-[var(--color-ink)] flex items-center justify-center">
+            <span class="text-[var(--color-gold)] font-display font-bold text-lg">D</span>
+          </div>
+          <span class="font-display font-semibold text-xl tracking-tight">
+            Domeny<span class="text-[var(--color-gold)]">Market</span>
+          </span>
         </a>
-        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition-colors">
-          Kontakt
+        <a 
+          href="#contact" 
+          class="btn-luxury bg-[var(--color-ink)] text-[var(--color-paper)] px-6 py-3 rounded-full font-medium text-sm tracking-wide hover:bg-[var(--color-slate)] transition-colors"
+        >
+          Kontaktujte nás
         </a>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section class="pt-32 pb-20 px-4 bg-gradient-to-br from-blue-50 via-white to-emerald-50">
-    <div class="max-w-4xl mx-auto text-center">
-      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-6 leading-tight">
-        Najděte perfektní
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-emerald-500">.cz doménu</span>
-        pro váš business
-      </h1>
-      <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
-        Nabízíme pečlivě vybrané české domény s historií, zpětnými odkazy a potenciálem pro růst vašeho podnikání.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="#domains" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-lg hover:shadow-blue-200">
-          Prohlédnout domény →
-        </a>
-        <a href="#how-it-works" class="bg-white hover:bg-gray-50 text-gray-700 px-8 py-4 rounded-xl font-semibold text-lg border border-gray-200 transition-all">
-          Jak to funguje
-        </a>
+  <section class="relative min-h-screen flex items-center pt-20 noise-overlay overflow-hidden">
+    <!-- Decorative elements -->
+    <div class="absolute top-1/4 right-0 w-96 h-96 bg-[var(--color-gold)]/5 rounded-full blur-3xl animate-float"></div>
+    <div class="absolute bottom-1/4 left-0 w-64 h-64 bg-[var(--color-gold)]/10 rounded-full blur-3xl animate-float delay-300"></div>
+    
+    <!-- Grid pattern -->
+    <div class="absolute inset-0 opacity-[0.02]" style="background-image: linear-gradient(var(--color-ink) 1px, transparent 1px), linear-gradient(90deg, var(--color-ink) 1px, transparent 1px); background-size: 60px 60px;"></div>
+    
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-12 py-24">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div>
+          <div class="animate-fade-up">
+            <span class="inline-block text-[var(--color-gold)] font-medium text-sm tracking-[0.2em] uppercase mb-6">
+              Exkluzivní nabídka
+            </span>
+          </div>
+          
+          <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.1] mb-8 animate-fade-up delay-100">
+            Prémiové<br>
+            <span class="text-gradient">.cz domény</span><br>
+            pro váš business
+          </h1>
+          
+          <p class="text-[var(--color-muted)] text-lg lg:text-xl leading-relaxed mb-10 max-w-lg animate-fade-up delay-200">
+            Pečlivě kurátorovaná kolekce českých domén s historií, autoritou a potenciálem pro růst vašeho podnikání.
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-4 animate-fade-up delay-300">
+            <a 
+              href="#domains" 
+              class="btn-luxury inline-flex items-center justify-center gap-2 bg-[var(--color-gold)] hover:bg-[var(--color-gold-dark)] text-white px-8 py-4 rounded-full font-semibold text-base transition-all hover:shadow-xl hover:shadow-[var(--color-gold)]/20"
+            >
+              Prohlédnout kolekci
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+            <a 
+              href="#process" 
+              class="inline-flex items-center justify-center gap-2 text-[var(--color-ink)] hover:text-[var(--color-gold)] px-8 py-4 font-medium transition-colors"
+            >
+              Jak to funguje
+            </a>
+          </div>
+        </div>
+        
+        <!-- Featured domain card -->
+        <div class="relative animate-fade-up delay-400">
+          <div class="absolute -inset-4 bg-gradient-to-r from-[var(--color-gold)]/20 to-transparent rounded-3xl blur-2xl"></div>
+          <div class="relative bg-white rounded-3xl p-8 lg:p-10 shadow-2xl shadow-[var(--color-ink)]/5 border border-[var(--color-ink)]/5">
+            <div class="flex items-center gap-2 mb-6">
+              <span class="gold-shimmer text-xs font-bold tracking-widest uppercase">Featured</span>
+            </div>
+            <h3 class="font-display text-4xl lg:text-5xl font-bold text-[var(--color-ink)] mb-4">
+              nwsltr.cz
+            </h3>
+            <p class="text-[var(--color-muted)] mb-6">
+              Moderní zkratka pro 'newsletter'. Perfektní pro email marketing platformu nebo SaaS startup.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-8">
+              <span class="text-xs bg-[var(--color-cream)] text-[var(--color-slate)] px-3 py-1.5 rounded-full">Brandable</span>
+              <span class="text-xs bg-[var(--color-cream)] text-[var(--color-slate)] px-3 py-1.5 rounded-full">Tech Startup</span>
+              <span class="text-xs bg-[var(--color-cream)] text-[var(--color-slate)] px-3 py-1.5 rounded-full">Krátká</span>
+            </div>
+            <a href="#contact" class="inline-flex items-center gap-2 text-[var(--color-gold)] font-semibold hover:gap-4 transition-all">
+              Mám zájem
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Stats -->
-  <section class="py-12 bg-white border-y border-gray-100">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div>
-          <div class="text-3xl font-bold text-blue-600">{domains.length}+</div>
-          <div class="text-gray-600 mt-1">Domén v nabídce</div>
+  <!-- Trust indicators -->
+  <section class="py-16 border-y border-[var(--color-ink)]/5 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-16">
+        <div class="text-center">
+          <div class="font-display text-4xl lg:text-5xl font-bold text-[var(--color-ink)] mb-2">{domains.length}</div>
+          <div class="text-[var(--color-muted)] text-sm tracking-wide">Domén v kolekci</div>
         </div>
-        <div>
-          <div class="text-3xl font-bold text-blue-600">100%</div>
-          <div class="text-gray-600 mt-1">České .cz domény</div>
+        <div class="text-center">
+          <div class="font-display text-4xl lg:text-5xl font-bold text-[var(--color-ink)] mb-2">100%</div>
+          <div class="text-[var(--color-muted)] text-sm tracking-wide">České .cz domény</div>
         </div>
-        <div>
-          <div class="text-3xl font-bold text-blue-600">24h</div>
-          <div class="text-gray-600 mt-1">Rychlý převod</div>
+        <div class="text-center">
+          <div class="font-display text-4xl lg:text-5xl font-bold text-[var(--color-ink)] mb-2">24h</div>
+          <div class="text-[var(--color-muted)] text-sm tracking-wide">Rychlost převodu</div>
         </div>
-        <div>
-          <div class="text-3xl font-bold text-blue-600">🔒</div>
-          <div class="text-gray-600 mt-1">Bezpečná transakce</div>
+        <div class="text-center">
+          <div class="font-display text-4xl lg:text-5xl font-bold text-[var(--color-ink)] mb-2">∞</div>
+          <div class="text-[var(--color-muted)] text-sm tracking-wide">Potenciál růstu</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Domains List -->
-  <section id="domains" class="py-20 px-4">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Domény na prodej</h2>
-        <p class="text-gray-600 text-lg">Vyberte si z naší nabídky kvalitních českých domén</p>
+  <!-- Domains Collection -->
+  <section id="domains" class="py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="max-w-2xl mb-16">
+        <span class="text-[var(--color-gold)] font-medium text-sm tracking-[0.2em] uppercase mb-4 block">Kolekce</span>
+        <h2 class="font-display text-4xl lg:text-5xl font-bold text-[var(--color-ink)] mb-6">
+          Domény na prodej
+        </h2>
+        <p class="text-[var(--color-muted)] text-lg">
+          Každá doména je pečlivě vybraná pro svůj potenciál, historii a schopnost budovat značku.
+        </p>
       </div>
       
-      <div class="grid md:grid-cols-2 gap-6">
-        {domains.map((domain) => (
-          <div class={`bg-white rounded-2xl border ${domain.premium ? 'border-blue-200 shadow-lg shadow-blue-50' : 'border-gray-200'} p-6 hover:shadow-xl transition-all duration-300 group`}>
+      <div class="grid lg:grid-cols-2 gap-6">
+        {domains.map((domain, index) => (
+          <article 
+            class={`card-hover group relative bg-white rounded-2xl p-8 border border-[var(--color-ink)]/5 ${domain.premium ? 'lg:col-span-2 lg:flex lg:items-center lg:gap-12' : ''}`}
+            style={`animation-delay: ${index * 100}ms`}
+          >
             {domain.premium && (
-              <div class="inline-flex items-center bg-gradient-to-r from-amber-400 to-orange-400 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
-                ⭐ PREMIUM
+              <div class="absolute top-6 right-6 flex items-center gap-1.5 bg-gradient-to-r from-[var(--color-gold)] to-[var(--color-gold-dark)] text-white text-xs font-bold tracking-wider uppercase px-4 py-1.5 rounded-full">
+                <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                Premium
               </div>
             )}
-            <div class="flex items-start justify-between mb-4">
-              <div>
-                <h3 class="text-2xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
-                  {domain.domain}
-                </h3>
-                <span class="inline-block mt-2 text-sm text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
-                  {domain.category}
-                </span>
+            
+            <div class={domain.premium ? 'lg:flex-1' : ''}>
+              <div class="mb-4">
+                <span class="text-xs text-[var(--color-muted)] tracking-wide uppercase">{domain.category}</span>
               </div>
+              
+              <h3 class="font-display text-3xl lg:text-4xl font-bold text-[var(--color-ink)] mb-4 group-hover:text-[var(--color-gold)] transition-colors duration-300">
+                {domain.domain}
+              </h3>
+              
+              <p class="text-[var(--color-muted)] leading-relaxed mb-6">
+                {domain.description}
+              </p>
+              
+              <div class="flex flex-wrap gap-2">
+                {domain.highlights.map((highlight) => (
+                  <span class="text-xs bg-[var(--color-cream)] text-[var(--color-slate)] px-3 py-1.5 rounded-full">
+                    {highlight}
+                  </span>
+                ))}
+              </div>
+            </div>
+            
+            <div class={`mt-8 ${domain.premium ? 'lg:mt-0' : ''}`}>
               <a 
-                href={`#contact`} 
-                class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition-colors shrink-0"
+                href="#contact" 
+                class="inline-flex items-center gap-2 bg-[var(--color-ink)] hover:bg-[var(--color-gold)] text-white px-6 py-3 rounded-full font-medium text-sm transition-all duration-300"
               >
                 Mám zájem
+                <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                </svg>
               </a>
             </div>
-            <p class="text-gray-600 mb-4">{domain.description}</p>
-            <div class="flex flex-wrap gap-2">
-              {domain.highlights.map((highlight) => (
-                <span class="text-sm text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full">
-                  ✓ {highlight}
-                </span>
-              ))}
-            </div>
-          </div>
+          </article>
         ))}
       </div>
     </div>
   </section>
 
-  <!-- How It Works -->
-  <section id="how-it-works" class="py-20 px-4 bg-gray-50">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">Jak to funguje</h2>
-        <p class="text-gray-600 text-lg">Jednoduchý proces ve 3 krocích</p>
+  <!-- Process -->
+  <section id="process" class="py-24 lg:py-32 bg-[var(--color-ink)] text-white noise-overlay">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="text-center max-w-2xl mx-auto mb-20">
+        <span class="text-[var(--color-gold)] font-medium text-sm tracking-[0.2em] uppercase mb-4 block">Proces</span>
+        <h2 class="font-display text-4xl lg:text-5xl font-bold mb-6">
+          Jednoduchý a transparentní
+        </h2>
+        <p class="text-white/60 text-lg">
+          Od prvního kontaktu k převodu domény ve třech krocích.
+        </p>
       </div>
       
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white rounded-2xl p-8 text-center shadow-sm">
-          <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6">
-            1️⃣
+      <div class="grid md:grid-cols-3 gap-8 lg:gap-12">
+        <div class="relative">
+          <div class="absolute -top-4 -left-4 w-16 h-16 bg-[var(--color-gold)]/10 rounded-2xl"></div>
+          <div class="relative">
+            <span class="font-display text-6xl font-bold text-[var(--color-gold)]/30">01</span>
+            <h3 class="font-display text-2xl font-bold mt-4 mb-4">Vyberte doménu</h3>
+            <p class="text-white/60 leading-relaxed">
+              Prohlédněte si naši kolekci a najděte doménu, která rezonuje s vaší vizí a značkou.
+            </p>
           </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">Vyberte doménu</h3>
-          <p class="text-gray-600">Prohlédněte si naši nabídku a vyberte doménu, která se hodí pro váš projekt.</p>
         </div>
-        <div class="bg-white rounded-2xl p-8 text-center shadow-sm">
-          <div class="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6">
-            2️⃣
+        
+        <div class="relative">
+          <div class="absolute -top-4 -left-4 w-16 h-16 bg-[var(--color-gold)]/10 rounded-2xl"></div>
+          <div class="relative">
+            <span class="font-display text-6xl font-bold text-[var(--color-gold)]/30">02</span>
+            <h3 class="font-display text-2xl font-bold mt-4 mb-4">Kontaktujte nás</h3>
+            <p class="text-white/60 leading-relaxed">
+              Napište nám s vaší nabídkou. Každou nabídku pečlivě zvážíme a odpovíme do 24 hodin.
+            </p>
           </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">Kontaktujte nás</h3>
-          <p class="text-gray-600">Napište nám email s vaší nabídkou. Odpovíme do 24 hodin.</p>
         </div>
-        <div class="bg-white rounded-2xl p-8 text-center shadow-sm">
-          <div class="w-16 h-16 bg-amber-100 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6">
-            3️⃣
+        
+        <div class="relative">
+          <div class="absolute -top-4 -left-4 w-16 h-16 bg-[var(--color-gold)]/10 rounded-2xl"></div>
+          <div class="relative">
+            <span class="font-display text-6xl font-bold text-[var(--color-gold)]/30">03</span>
+            <h3 class="font-display text-2xl font-bold mt-4 mb-4">Bezpečný převod</h3>
+            <p class="text-white/60 leading-relaxed">
+              Po dohodě zajistíme rychlý a bezpečný převod domény na váš registrátorský účet.
+            </p>
           </div>
-          <h3 class="text-xl font-bold text-gray-900 mb-3">Převod domény</h3>
-          <p class="text-gray-600">Po dohodě provedeme bezpečný převod domény na váš účet.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-20 px-4 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
-    <div class="max-w-3xl mx-auto text-center">
-      <h2 class="text-3xl sm:text-4xl font-bold mb-6">Máte zájem o některou doménu?</h2>
-      <p class="text-blue-100 text-lg mb-10">
-        Napište nám a dejte nám vědět, o kterou doménu máte zájem a jakou cenu nabízíte. Každou nabídku pečlivě zvážíme.
-      </p>
-      <a 
-        href="mailto:domeny@domenymarket.cz?subject=Zájem o doménu" 
-        class="inline-flex items-center bg-white text-blue-600 hover:bg-blue-50 px-8 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-lg"
-      >
-        📧 domeny@domenymarket.cz
-      </a>
-      <p class="mt-6 text-blue-200 text-sm">Odpovídáme do 24 hodin</p>
+  <section id="contact" class="py-24 lg:py-32 relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-[var(--color-cream)] to-white"></div>
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-[var(--color-gold)]/5 rounded-l-[100px]"></div>
+    
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="max-w-2xl">
+        <span class="text-[var(--color-gold)] font-medium text-sm tracking-[0.2em] uppercase mb-4 block">Kontakt</span>
+        <h2 class="font-display text-4xl lg:text-5xl font-bold text-[var(--color-ink)] mb-6">
+          Máte zájem?
+        </h2>
+        <p class="text-[var(--color-muted)] text-lg mb-10 leading-relaxed">
+          Napište nám email s názvem domény a vaší nabídkou. Jsme otevřeni diskuzi a každou nabídku pečlivě zvážíme.
+        </p>
+        
+        <a 
+          href="mailto:domeny@domenymarket.cz?subject=Zájem o doménu" 
+          class="group inline-flex items-center gap-4 bg-[var(--color-ink)] hover:bg-[var(--color-gold)] text-white px-8 py-5 rounded-2xl font-semibold text-lg transition-all duration-300 hover:shadow-xl"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+          </svg>
+          domeny@domenymarket.cz
+          <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+        
+        <p class="mt-6 text-[var(--color-muted)] text-sm">
+          Odpovídáme do 24 hodin
+        </p>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-8 px-4 bg-gray-900 text-gray-400">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
-      <div class="flex items-center space-x-2">
-        <span class="text-xl">🌐</span>
-        <span class="font-semibold text-white">DomenyMarket.cz</span>
+  <footer class="py-12 border-t border-[var(--color-ink)]/5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-[var(--color-ink)] flex items-center justify-center">
+            <span class="text-[var(--color-gold)] font-display font-bold text-sm">D</span>
+          </div>
+          <span class="font-display font-semibold">
+            Domeny<span class="text-[var(--color-gold)]">Market</span>.cz
+          </span>
+        </div>
+        <p class="text-[var(--color-muted)] text-sm">
+          © 2026 DomenyMarket.cz — Prémiové české domény
+        </p>
       </div>
-      <p class="text-sm">© 2026 DomenyMarket.cz. Všechna práva vyhrazena.</p>
     </div>
   </footer>
 </Layout>
