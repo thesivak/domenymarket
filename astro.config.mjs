@@ -5,8 +5,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://thesivak.github.io',
-  base: '/domenymarket',
+  site: 'https://domenymarket.cz',
+  // base: '/domenymarket', // Only for GitHub Pages without custom domain
   vite: {
     plugins: [tailwindcss()]
   }
