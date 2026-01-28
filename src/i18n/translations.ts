@@ -68,6 +68,10 @@ export const translations = {
       'Marketing & Reklama': 'Marketing & Reklama',
       'E-commerce': 'E-commerce',
       'Umění & Kultura': 'Umění & Kultura',
+      'Creative & Branding': 'Creative & Branding',
+      'Sport & Motorsport': 'Sport & Motorsport',
+      'Sport & Fitness': 'Sport & Fitness',
+      'Tech & Gaming': 'Tech & Gaming',
     },
   },
   en: {
@@ -132,6 +136,10 @@ export const translations = {
       'Marketing & Reklama': 'Marketing & Advertising',
       'E-commerce': 'E-commerce',
       'Umění & Kultura': 'Art & Culture',
+      'Creative & Branding': 'Creative & Branding',
+      'Sport & Motorsport': 'Sport & Motorsport',
+      'Sport & Fitness': 'Sport & Fitness',
+      'Tech & Gaming': 'Tech & Gaming',
     },
   },
 } as const;

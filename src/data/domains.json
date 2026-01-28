@@ -26,6 +26,19 @@
     "premium": true
   },
   {
+    "domain": "wraptor.cz",
+    "category": "Creative & Branding",
+    "description": {
+      "cs": "Unikátní doména pro car wrapping studio, branding agenturu nebo kreativní business. Zapamatovatelná a originální.",
+      "en": "Unique domain for car wrapping studio, branding agency or creative business. Memorable and original."
+    },
+    "highlights": {
+      "cs": ["Unikátní název", "Creative business", "Brandable"],
+      "en": ["Unique name", "Creative business", "Brandable"]
+    },
+    "premium": true
+  },
+  {
     "domain": "rcmshop.cz",
     "category": "E-commerce",
     "description": {
@@ -39,6 +52,32 @@
     "premium": false
   },
   {
+    "domain": "babyhop.cz",
+    "category": "E-commerce",
+    "description": {
+      "cs": "Skvělá doména pro e-shop s dětským zbožím, hračkami nebo baby produkty. Přátelská a snadno zapamatovatelná.",
+      "en": "Great domain for e-shop with children's goods, toys or baby products. Friendly and easy to remember."
+    },
+    "highlights": {
+      "cs": ["Baby/kids niche", "E-shop ready", "Přátelský název"],
+      "en": ["Baby/kids niche", "E-shop ready", "Friendly name"]
+    },
+    "premium": false
+  },
+  {
+    "domain": "gogart.cz",
+    "category": "Sport & Motorsport",
+    "description": {
+      "cs": "Perfektní pro go-kart centrum, motorsport e-shop nebo racing komunitu. Silný keyword.",
+      "en": "Perfect for go-kart center, motorsport e-shop or racing community. Strong keyword."
+    },
+    "highlights": {
+      "cs": ["Motorsport niche", "Silný keyword", "Sport & zábava"],
+      "en": ["Motorsport niche", "Strong keyword", "Sport & fun"]
+    },
+    "premium": false
+  },
+  {
     "domain": "artplzen.cz",
     "category": "Umění & Kultura",
     "description": {
@@ -48,6 +87,45 @@
     "highlights": {
       "cs": ["109 zpětných odkazů", "GEO targeted", "Kulturní sektor"],
       "en": ["109 backlinks", "GEO targeted", "Cultural sector"]
+    },
+    "premium": false
+  },
+  {
+    "domain": "mksport.cz",
+    "category": "Sport & Fitness",
+    "description": {
+      "cs": "Ideální pro sportovní klub, e-shop se sportovním vybavením nebo fitness brand. Univerzální sportovní doména.",
+      "en": "Ideal for sports club, sports equipment e-shop or fitness brand. Universal sports domain."
+    },
+    "highlights": {
+      "cs": ["Sport keyword", "Univerzální", "Brand ready"],
+      "en": ["Sport keyword", "Universal", "Brand ready"]
+    },
+    "premium": false
+  },
+  {
+    "domain": "gymvh.cz",
+    "category": "Sport & Fitness",
+    "description": {
+      "cs": "Doména pro fitness centrum, posilovnu nebo zdravý životní styl. Krátká a výstižná.",
+      "en": "Domain for fitness center, gym or healthy lifestyle. Short and concise."
+    },
+    "highlights": {
+      "cs": ["Fitness niche", "Krátká", "Gym keyword"],
+      "en": ["Fitness niche", "Short", "Gym keyword"]
+    },
+    "premium": false
+  },
+  {
+    "domain": "csmini.cz",
+    "category": "Tech & Gaming",
+    "description": {
+      "cs": "Ideální pro tech startup, gaming komunitu nebo miniaturní produkty. Krátká a moderní.",
+      "en": "Ideal for tech startup, gaming community or miniature products. Short and modern."
+    },
+    "highlights": {
+      "cs": ["Tech/Gaming", "Krátká", "Moderní"],
+      "en": ["Tech/Gaming", "Short", "Modern"]
     },
     "premium": false
   }
