@@ -2,29 +2,53 @@
   {
     "domain": "nwsltr.cz",
     "category": "SaaS & Tech",
-    "description": "Moderní zkratka pro 'newsletter'. Perfektní pro email marketing platformu, SaaS startup nebo content creator tools. Krátká, zapamatovatelná, okamžitě jasná.",
-    "highlights": ["Brandable", "Tech startup ready", "6 znaků", "Trending niche"],
+    "description": {
+      "cs": "Moderní zkratka pro 'newsletter'. Perfektní pro email marketing platformu, SaaS startup nebo content creator tools. Krátká, zapamatovatelná, okamžitě jasná.",
+      "en": "Modern abbreviation for 'newsletter'. Perfect for email marketing platform, SaaS startup or content creator tools. Short, memorable, instantly clear."
+    },
+    "highlights": {
+      "cs": ["Brandable", "Tech startup ready", "6 znaků", "Trending niche"],
+      "en": ["Brandable", "Tech startup ready", "6 characters", "Trending niche"]
+    },
     "premium": true
   },
   {
     "domain": "idvert.cz",
     "category": "Marketing & Reklama",
-    "description": "Skvělá doména pro reklamní agenturu, ad-tech startup nebo marketingovou platformu. Historie od roku 2017 s existujícími zpětnými odkazy.",
-    "highlights": ["178 zpětných odkazů", "7+ let historie", "Ad-tech niche"],
+    "description": {
+      "cs": "Skvělá doména pro reklamní agenturu, ad-tech startup nebo marketingovou platformu. Historie od roku 2017 s existujícími zpětnými odkazy.",
+      "en": "Great domain for advertising agency, ad-tech startup or marketing platform. History since 2017 with existing backlinks."
+    },
+    "highlights": {
+      "cs": ["178 zpětných odkazů", "7+ let historie", "Ad-tech niche"],
+      "en": ["178 backlinks", "7+ years history", "Ad-tech niche"]
+    },
     "premium": true
   },
   {
     "domain": "rcmshop.cz",
     "category": "E-commerce",
-    "description": "Ideální pro e-shop s RC modely, drony nebo hobby elektronikou. Silný keyword match pro RC komunitu v Česku.",
-    "highlights": ["176 zpětných odkazů", "E-shop ready", "Niche keyword"],
+    "description": {
+      "cs": "Ideální pro e-shop s RC modely, drony nebo hobby elektronikou. Silný keyword match pro RC komunitu v Česku.",
+      "en": "Ideal for e-shop with RC models, drones or hobby electronics. Strong keyword match for RC community in Czech Republic."
+    },
+    "highlights": {
+      "cs": ["176 zpětných odkazů", "E-shop ready", "Niche keyword"],
+      "en": ["176 backlinks", "E-shop ready", "Niche keyword"]
+    },
     "premium": false
   },
   {
     "domain": "artplzen.cz",
     "category": "Umění & Kultura",
-    "description": "Kombinace 'art' + lokace Plzeň. Vhodné pro galerie, umělecká studia, kulturní projekty nebo kreativní agentury v západních Čechách.",
-    "highlights": ["109 zpětných odkazů", "GEO targeted", "Kulturní sektor"],
+    "description": {
+      "cs": "Kombinace 'art' + lokace Plzeň. Vhodné pro galerie, umělecká studia, kulturní projekty nebo kreativní agentury v západních Čechách.",
+      "en": "Combination of 'art' + Pilsen location. Suitable for galleries, art studios, cultural projects or creative agencies in Western Bohemia."
+    },
+    "highlights": {
+      "cs": ["109 zpětných odkazů", "GEO targeted", "Kulturní sektor"],
+      "en": ["109 backlinks", "GEO targeted", "Cultural sector"]
+    },
     "premium": false
   }
 ]

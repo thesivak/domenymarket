@@ -1,18 +1,18 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import domains from '../data/domains.json';
-import { useTranslations } from '../i18n/translations';
+import Layout from '../../layouts/Layout.astro';
+import domains from '../../data/domains.json';
+import { useTranslations } from '../../i18n/translations';
 
-const lang = 'cs';
+const lang = 'en';
 const t = useTranslations(lang);
 ---
 
-<Layout title="DomenyMarket.cz | Prémiové české domény">
+<Layout title="DomenyMarket.cz | Premium Czech Domains">
   <!-- Navigation -->
   <nav class="fixed top-0 left-0 right-0 z-50 bg-[var(--color-paper)]/90 backdrop-blur-md border-b border-[var(--color-ink)]/5">
     <div class="max-w-7xl mx-auto px-6 lg:px-12">
       <div class="flex justify-between items-center h-20">
-        <a href="/" class="group flex items-center gap-3">
+        <a href="/en" class="group flex items-center gap-3">
           <div class="w-10 h-10 rounded-full bg-[var(--color-ink)] flex items-center justify-center">
             <span class="text-[var(--color-gold)] font-display font-bold text-lg">D</span>
           </div>
@@ -23,8 +23,8 @@ const t = useTranslations(lang);
         <div class="flex items-center gap-4">
           <!-- Language Switcher -->
           <div class="flex items-center gap-1 text-sm">
-            <a href="/" class="px-2 py-1 rounded font-medium bg-[var(--color-ink)] text-white">CZ</a>
-            <a href="/en" class="px-2 py-1 rounded text-[var(--color-muted)] hover:text-[var(--color-ink)] transition-colors">EN</a>
+            <a href="/" class="px-2 py-1 rounded text-[var(--color-muted)] hover:text-[var(--color-ink)] transition-colors">CZ</a>
+            <a href="/en" class="px-2 py-1 rounded font-medium bg-[var(--color-ink)] text-white">EN</a>
           </div>
           <a 
             href="#contact" 
@@ -265,7 +265,7 @@ const t = useTranslations(lang);
         </p>
         
         <a 
-          href="mailto:domeny@domenymarket.cz?subject=Zájem o doménu" 
+          href="mailto:domeny@domenymarket.cz?subject=Domain Inquiry" 
           class="group inline-flex items-center gap-4 bg-[var(--color-ink)] hover:bg-[var(--color-gold)] text-white px-8 py-5 rounded-2xl font-semibold text-lg transition-all duration-300 hover:shadow-xl"
         >
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -312,8 +312,8 @@ const t = useTranslations(lang);
             <p>787 01 Šumperk</p>
             <p>Czech Republic</p>
             <div class="pt-2 flex flex-wrap gap-x-6 gap-y-1">
-              <p><span class="text-[var(--color-slate)]">IČO:</span> 73944726</p>
-              <p><span class="text-[var(--color-slate)]">DIČ:</span> CZ8312025755</p>
+              <p><span class="text-[var(--color-slate)]">ID:</span> 73944726</p>
+              <p><span class="text-[var(--color-slate)]">VAT ID:</span> CZ8312025755</p>
             </div>
           </div>
         </div>
@@ -324,8 +324,8 @@ const t = useTranslations(lang);
           © 2026 DomenyMarket.cz
         </p>
         <div class="flex items-center gap-1 text-sm">
-          <a href="/" class="px-2 py-1 rounded font-medium bg-[var(--color-ink)] text-white">CZ</a>
-          <a href="/en" class="px-2 py-1 rounded text-[var(--color-muted)] hover:text-[var(--color-ink)] transition-colors">EN</a>
+          <a href="/" class="px-2 py-1 rounded text-[var(--color-muted)] hover:text-[var(--color-ink)] transition-colors">CZ</a>
+          <a href="/en" class="px-2 py-1 rounded font-medium bg-[var(--color-ink)] text-white">EN</a>
         </div>
       </div>
     </div>
