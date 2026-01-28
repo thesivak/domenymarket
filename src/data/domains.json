@@ -1,0 +1,30 @@
+[
+  {
+    "domain": "idvert.cz",
+    "category": "Marketing & Reklama",
+    "description": "Skvělá doména pro reklamní agenturu nebo ad-tech startup. Historie od roku 2017.",
+    "highlights": ["178 zpětných odkazů", "Zavedená doména", "Ad-tech niche"],
+    "premium": true
+  },
+  {
+    "domain": "rcmshop.cz",
+    "category": "E-commerce",
+    "description": "Ideální pro e-shop s RC modely a hobby produkty. Silný keyword.",
+    "highlights": ["176 zpětných odkazů", "E-shop ready", "RC hobby niche"],
+    "premium": true
+  },
+  {
+    "domain": "nwsltr.cz",
+    "category": "SaaS & Tech",
+    "description": "Moderní zkratka pro 'newsletter'. Perfektní pro email marketing platformu.",
+    "highlights": ["Brandable", "Tech startup", "Krátká a zapamatovatelná"],
+    "premium": true
+  },
+  {
+    "domain": "artplzen.cz",
+    "category": "Umění & Kultura",
+    "description": "Kombinace 'art' + lokace Plzeň. Vhodné pro galerie, umělce nebo kulturní projekty.",
+    "highlights": ["109 zpětných odkazů", "GEO doména", "Kulturní sektor"],
+    "premium": false
+  }
+]
