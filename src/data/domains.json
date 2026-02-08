@@ -1,5 +1,18 @@
 [
   {
+    "domain": "dhome.cz",
+    "category": "Smart Home & Reality",
+    "description": {
+      "cs": "Chytrá domácnost, home automation, reality",
+      "en": "Smart home, home automation, real estate"
+    },
+    "highlights": {
+      "cs": ["5 znaků", "Historie od 2013", "BL 1000", "Smart home niche"],
+      "en": ["5 characters", "History since 2013", "BL 1000", "Smart home niche"]
+    },
+    "premium": true
+  },
+  {
     "domain": "nwsltr.cz",
     "category": "SaaS & Tech",
     "description": {
